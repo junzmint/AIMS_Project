@@ -1,0 +1,3 @@
+Java is pass-by-value programming language. 
+Việc ta làm ở phương thức swap đó là chúng ta cho o1 và o2 trỏ đến vùng nhớ mà jungleDVD và cinderellaDVD trỏ tới và thay đổi giá trị của o1 và o2
+Việc ta làm ở phương thức changeTitle là chúng ta cho disc trỏ tới vùng nhớ mà jungleDVD trỏ tới, thay đổi giá trị ở vùng nhớ đó nên giá trị của jungleDVD cung bị thay đổi. Còn câu lệnh cuối ở phương thức này là chúng ta khiến biến disc trỏ tới vùng nhớ khác chứ không phải jungleDVD
