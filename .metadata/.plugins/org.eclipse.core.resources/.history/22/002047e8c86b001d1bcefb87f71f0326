@@ -59,7 +59,5 @@ public class DigitalVideoDisc {
 		this.director = director;
 		this.length = length;
 		this.cost = cost;
-		DigitalVideoDisc.nbDigitalVideoDiscs += 1;
-		this.id = DigitalVideoDisc.nbDigitalVideoDiscs;
 	}
 }
