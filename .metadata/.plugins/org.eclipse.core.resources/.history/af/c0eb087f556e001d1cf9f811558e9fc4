@@ -1,0 +1,25 @@
+package main;
+
+public class Store {
+	public static final int MAX_NUMBER_IN_STORE = 10000;
+	private DigitalVideoDisc itemsInStore[] = new DigitalVideoDisc[MAX_NUMBER_IN_STORE];
+	private int qtyInStore = 0;
+	public String addDigitalVideoDisc(DigitalVideoDisc disc) {
+		if(qtyOrdered == MAX_NUMBER_ORDERED) {
+			return "The cart is full. You can't add any DVDs now";
+		}
+		else {
+			itemsOrdered[qtyOrdered] = disc;
+			qtyOrdered += 1;
+			if(qtyOrdered == MAX_NUMBER_ORDERED) {
+				return "The disc has been added. The cart is full.";
+			}
+			else if(qtyOrdered == MAX_NUMBER_ORDERED - 1) {
+				return "The disc has been added. The cart is almost full.";
+			}
+			else {
+				return "The disc has been added.";
+			}
+		}
+	}
+}

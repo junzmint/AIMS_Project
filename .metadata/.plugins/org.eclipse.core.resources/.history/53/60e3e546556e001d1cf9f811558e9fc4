@@ -1,0 +1,5 @@
+package main;
+
+public class Store {
+	private DigitalVideoDisc itemsOrdered[] = new DigitalVideoDisc[MAX_NUMBER_ORDERED];
+}
