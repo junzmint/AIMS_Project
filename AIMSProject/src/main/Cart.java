@@ -98,6 +98,31 @@ public class Cart {
 		}
 		return seeCart;
 	}
+	public void print() {
+		System.out.println("***********************CART***********************");
+		System.out.println("Ordered Items:");
+		for(int i = 0; i < qtyOrdered; i++) {
+			System.out.println((i+1) + ". " + this.SearchDVD(itemsOrdered[i].getTitle()));
+		}
+		System.out.println("Total cost: " + this.totalCost());
+		System.out.println("***************************************************");
+	}
+	public String SearchDVD(int id) {
+		for(int i = 0; i < qtyOrdered; i++) {
+			if(id == itemsOrdered[i].getId()) {
+			 	return itemsOrdered[i].toString();
+			}
+		}
+		return "The DVD is not fournd";
+	}
+	public String SearchDVD(String title) {
+		for(int i = 0; i < qtyOrdered; i++) {
+			if(itemsOrdered[i].getTitle().equals(title)) {
+			 	return itemsOrdered[i].toString();
+			}
+		}
+		return "The DVD is not fournd";
+	}
 	public float totalCost() {
 		float total = 0;
 		for(int i = 0; i < qtyOrdered; i++) {
