@@ -1,4 +1,6 @@
-package main;
+package hust.soict.dsai.test.disc.TestPassingParameter;
+
+import hust.soict.dsai.aims.disc.DigitalVideoDisc.DigitalVideoDisc;
 
 public class TestPassingParameter {
 	public static void main(String[] args) {

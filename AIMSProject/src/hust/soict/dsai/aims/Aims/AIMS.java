@@ -1,9 +1,12 @@
-package main;
+package hust.soict.dsai.aims.Aims;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import javax.swing.JOptionPane;
+// import javax.swing.JOptionPane;
+
+import hust.soict.dsai.aims.cart.Cart.Cart;
+import hust.soict.dsai.aims.disc.DigitalVideoDisc.DigitalVideoDisc;
 public class AIMS {
 
 	public static void main(String[] args) {
