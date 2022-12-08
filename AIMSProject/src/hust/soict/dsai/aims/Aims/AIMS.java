@@ -6,7 +6,7 @@ import java.util.Arrays;
 // import javax.swing.JOptionPane;
 
 import hust.soict.dsai.aims.cart.Cart.Cart;
-import hust.soict.dsai.aims.disc.DigitalVideoDisc.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
 public class AIMS {
 
 	public static void main(String[] args) {

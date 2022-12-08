@@ -2,7 +2,7 @@ package hust.soict.dsai.aims.cart.Cart;
 import java.util.ArrayList;  
 import java.util.Arrays;
 
-import hust.soict.dsai.aims.disc.DigitalVideoDisc.DigitalVideoDisc;  
+import hust.soict.dsai.aims.media.DigitalVideoDisc;  
 public class Cart {
 	public static final int MAX_NUMBER_ORDERED = 20;
 	private DigitalVideoDisc itemsOrdered[] = new DigitalVideoDisc[MAX_NUMBER_ORDERED];
