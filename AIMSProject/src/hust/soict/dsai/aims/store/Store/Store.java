@@ -1,10 +1,8 @@
 package hust.soict.dsai.aims.store.Store;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-import hust.soict.dsai.aims.media.DigitalVideoDisc;
 import hust.soict.dsai.aims.media.Media;
 
 public class Store {
@@ -43,11 +41,21 @@ public class Store {
 		}
 		System.out.println("The media is not in the store's list.");
 	}
-	public StringBuffer seeStoreList() {
+	public StringBuffer viewStoreList() {
 		StringBuffer seeStoreList = new StringBuffer();
 		for(Media mediaAdded : this.itemsInStore) {
 			seeStoreList.append("The DVD's title is " + mediaAdded.getTitle() + ", the category is " + mediaAdded.getCategory() + " and it costs " + mediaAdded.getCost()+"\n");
 		}
 		return seeStoreList;
 	}
+
+    public Media searchStore(String searchItem) {
+        for (Media media : itemsInStore) {
+            if (media.isMatch(searchItem)) {
+                return media;
+            }
+        }
+        return null;
+    }
+
 }

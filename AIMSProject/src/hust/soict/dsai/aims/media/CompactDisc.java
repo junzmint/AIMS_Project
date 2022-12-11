@@ -6,6 +6,10 @@ import java.util.List;
 public class CompactDisc extends Disc implements Playable {
 	private String artist;
 	private List<Track> tracks = new ArrayList<Track>();
+	
+	public void setArtist(String artist) {
+		this.artist = artist;
+	}
 	public String getArtist() {
 		return artist;
 	}
@@ -32,6 +36,7 @@ public class CompactDisc extends Disc implements Playable {
 		}
 		System.out.println("The track is not in the list.");
 	}
+	@Override
 	public int getLength() {
 		int sumLength = 0;
 		for(Track trackAdded : tracks) {
