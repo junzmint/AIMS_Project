@@ -1,16 +1,15 @@
 package hust.soict.dsai.aims.cart.Cart;
 import java.util.ArrayList;  
 import java.util.List;
-import hust.soict.dsai.aims.media.Media;
-import hust.soict.dsai.aims.media.Track;  
+import hust.soict.dsai.aims.media.Media; 
 public class Cart {
 	public static final int MAX_NUMBER_ORDERED = 20;
 	private List<Media> itemsOrdered = new ArrayList<Media>();
 	
 	public void addMedia(Media media) {
-		if(itemsOrdered.size() < 20) {
+		if(itemsOrdered.size() < MAX_NUMBER_ORDERED) {
 			itemsOrdered.add(media);
-			if(itemsOrdered.size() == 20) {
+			if(itemsOrdered.size() == MAX_NUMBER_ORDERED) {
 				System.out.println("The media is added to the list. The list is full");
 			}
 			else {
@@ -31,9 +30,11 @@ public class Cart {
 					&& mediaAdded.getCategory().equals(media.getCategory())
 					&& mediaAdded.getId() == media.getId()
 					&& mediaAdded.getCost() == media.getCost()
-					);
+					) {
+					this.itemsOrdered.remove(mediaAdded);
 					System.out.println("The media is removed from the list.");
 					return;
+					}
 				}
 			}
 		System.out.println("The media is not in the list.");
